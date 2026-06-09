@@ -201,8 +201,8 @@ if page == "🏠 Overview":
         brand_agg = state_dev.groupby("Brand")["Registered Users"].sum().nlargest(8).reset_index()
         fig3 = px.bar(brand_agg, x="Registered Users", y="Brand", orientation="h",
                       color="Registered Users", color_continuous_scale="Purples")
-        fig3.update_layout(**DARK, height=360, coloraxis_showscale=False,
-                           yaxis=dict(categoryorder="total ascending", gridcolor="#2d2d4e"))
+        fig3.update_layout(**{**DARK, "height":360, "coloraxis_showscale":False,
+                              "yaxis": {**DARK["yaxis"], "categoryorder":"total ascending"}})
         st.plotly_chart(fig3, use_container_width=True)
 
     # Key insights
@@ -377,9 +377,9 @@ elif page == "🗺️ India Map":
         color="State", color_discrete_sequence=px.colors.sequential.Purples[2:],
         title="Top 10 States – Transaction Volume Over Time"
     )
-    fig_race.update_layout(**DARK, height=480,
-                           yaxis=dict(categoryorder="total ascending", gridcolor="#2d2d4e"),
-                           showlegend=False)
+    fig_race.update_layout(**{**DARK, "height":480,
+                              "yaxis": {**DARK["yaxis"], "categoryorder":"total ascending"},
+                              "showlegend":False})
     st.plotly_chart(fig_race, use_container_width=True)
 
 
