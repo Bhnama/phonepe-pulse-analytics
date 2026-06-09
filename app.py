@@ -76,7 +76,7 @@ def load_data():
     dist_demo   = pd.read_excel(xl, "District Demographics")
     return state_txn, state_split, state_dev, dist_txn, dist_demo
 
-@st.cache_data
+@st.cache_resource
 def build_sqlite(state_txn, state_split, state_dev, dist_txn, dist_demo):
     conn = sqlite3.connect(":memory:")
     state_txn.to_sql("state_txn", conn, if_exists="replace", index=False)
