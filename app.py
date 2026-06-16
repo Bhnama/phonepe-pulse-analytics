@@ -78,16 +78,22 @@ def load_data():
 
 @st.cache_resource
 def build_sqlite(state_txn, state_split, state_dev, dist_txn, dist_demo):
-    conn = sqlite3.connect(":memory:", check_same_thread=False)
-    state_txn.to_sql("state_txn", conn, if_exists="replace", index=False)
-    state_split.to_sql("state_split", conn, if_exists="replace", index=False)
-    state_dev.to_sql("state_dev", conn, if_exists="replace", index=False)
-    dist_txn.to_sql("dist_txn", conn, if_exists="replace", index=False)
-    dist_demo.to_sql("dist_demo", conn, if_exists="replace", index=False)
-    return conn
+    return {
+        "state_txn": state_txn,
+        "state_split": state_split,
+        "state_dev": state_dev,
+        "dist_txn": dist_txn,
+        "dist_demo": dist_demo,
+    }
 
 state_txn, state_split, state_dev, dist_txn, dist_demo = load_data()
-conn = build_sqlite(state_txn, state_split, state_dev, dist_txn, dist_demo)
+sql_tables = build_sqlite(state_txn, state_split, state_dev, dist_txn, dist_demo)
+
+def run_query(sql):
+    with sqlite3.connect(":memory:") as temp_conn:
+        for table_name, df in sql_tables.items():
+            df.to_sql(table_name, temp_conn, if_exists="replace", index=False)
+        return pd.read_sql_query(sql, temp_conn)
 
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -592,7 +598,7 @@ ORDER BY User_Pop_Ratio DESC;""",
 
     if st.button("▶ Run Query", type="primary"):
         try:
-            result = pd.read_sql_query(sql, conn)
+            result = run_query(sql)
             st.success(f"✅ {len(result)} rows returned")
             st.dataframe(result, use_container_width=True)
 
