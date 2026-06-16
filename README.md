@@ -110,7 +110,7 @@ The dataset contains **5 tables** spanning Q1 2018 to Q2 2021:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/phonepe-pulse-analytics.git
+git clone https://github.com/Bhnama/phonepe-pulse-analytics.git
 cd phonepe-pulse-analytics
 ```
 
