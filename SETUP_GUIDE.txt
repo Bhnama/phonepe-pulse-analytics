@@ -16,7 +16,7 @@
 # 3. Make it PUBLIC (so recruiters can see it)
 # 4. Do NOT add README or .gitignore (we have our own)
 # 5. Click "Create repository"
-# 6. Copy the repo URL (looks like: https://github.com/YOUR_USERNAME/phonepe-pulse-analytics.git)
+# 6. Copy the repo URL (looks like: https://github.com/Bhnama/phonepe-pulse-analytics.git)
 
 # ── STEP 4: Initialize Git in your project folder ────────────────────────────
 cd phonepe-pulse-analytics   # navigate to your project folder
@@ -26,7 +26,7 @@ git add .
 git commit -m "🚀 Initial commit: PhonePe Pulse Analytics Dashboard"
 
 # ── STEP 5: Connect and push to GitHub ───────────────────────────────────────
-git remote add origin https://github.com/YOUR_USERNAME/phonepe-pulse-analytics.git
+git remote add origin https://github.com/Bhnama/phonepe-pulse-analytics.git
 git branch -M main
 git push -u origin main
 
