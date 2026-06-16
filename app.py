@@ -78,7 +78,7 @@ def load_data():
 
 @st.cache_resource
 def build_sqlite(state_txn, state_split, state_dev, dist_txn, dist_demo):
-    conn = sqlite3.connect(":memory:")
+    conn = sqlite3.connect(":memory:", check_same_thread=False)
     state_txn.to_sql("state_txn", conn, if_exists="replace", index=False)
     state_split.to_sql("state_split", conn, if_exists="replace", index=False)
     state_dev.to_sql("state_dev", conn, if_exists="replace", index=False)
