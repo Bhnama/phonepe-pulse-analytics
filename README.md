@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/PhonePe-Pulse%20Analytics-5f4bb6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMSAxNHYtNEg3bDUtOXY0aDRsLTUgOXoiLz48L3N2Zz4=" alt="PhonePe"/>
 
-# 💜 PhonePe Pulse — India Digital Payments Analytics
+# 💜 PhonePe Retention Radar — India Digital Payments Analytics
 
 **A full-stack data analytics project: EDA · Interactive Dashboard · ML Forecast · SQL Explorer**
 
