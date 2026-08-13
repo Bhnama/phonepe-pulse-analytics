@@ -73,7 +73,7 @@ The dataset contains **5 tables** spanning Q1 2018 to Q2 2021:
 | `District_Txn and Users` | District-level transaction data | 10,248 |
 | `District Demographics` | Population, density, area per district | 742 |
 
-**Source:** [PhonePe Pulse](https://www.phonepe.com/pulse/) — India's largest digital payments platform
+**Source:** [PhonePe Transaction Radar](https://www.phonepe.com/pulse/) — India's largest digital payments platform
 
 ---
 
