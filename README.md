@@ -11,7 +11,7 @@
 [![Plotly](https://img.shields.io/badge/Plotly-5.20-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=flat-square)](https://your-app-name.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=flat-square)](http://bhaweshphonepe.streamlit.app/)
 
 <br/>
 
