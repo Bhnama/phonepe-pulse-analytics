@@ -37,7 +37,7 @@
 
 ## 📸 Dashboard Preview
 
-> *(Screenshots will be added after deployment)*
+> *(   ![Overview](screenshots/overview.png))*
 
 | Overview | India Map | ML Forecast |
 |---|---|---|
