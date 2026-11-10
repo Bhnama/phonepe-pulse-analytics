@@ -37,7 +37,7 @@
 
 ## 📸 Dashboard Preview
 
-> *( [Overview](screenshots/overview.png))*
+> *( ![Overview](overview.png))*
 
 | Overview | India Map | ML Forecast |
 |---|---|---|
